@@ -1,0 +1,18 @@
+// Obtenha o resto da divisão entre os números "2 e 29173" e imprima na tela
+
+using System;
+
+namespace Exercicio2
+{
+    class Ex2
+    {
+        static void Main(string[] args)
+        {
+            float n1 = 2, n2 = 29173;
+
+            float resto = n1 % n2;
+
+            Console.WriteLine("O resto da divisao entre " + n1 + " e " + n2 + " eh " + resto);
+        }
+    }
+}

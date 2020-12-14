@@ -1,0 +1,23 @@
+//Junte as seguintes variáveis em 1 variável do tipo string e imprima o resultado na tela.
+//int numero = 10
+//string texto = "texto"
+//string resultado = numero + texto
+
+using System;
+
+namespace Exercicio3
+{
+    class Ex3
+    {
+        static void Main(string[] args)
+        {
+            int numero = 10;
+            string texto = "texto";
+
+            string numeroString = numero.ToString();
+            string resultado = texto + numeroString;
+
+            Console.WriteLine("A juncao do inteiro " + numero + " com a string " + texto + " eh " + resultado);
+        }
+    }
+}

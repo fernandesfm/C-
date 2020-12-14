@@ -1,0 +1,16 @@
+//Escreva uma palavra qualquer, pegue o primeiro caracter dela, coloque dentro de uma variável e imprima na tela
+
+using System;
+
+namespace Exercicio4
+{
+    class Ex4
+    {
+        static void Main(string[] args)
+        {
+            string str = "Felipe";
+            string PrimeiroCarac = str.Substring(0, 1);
+            Console.WriteLine("O primeiro caractere da string selecionada eh " + PrimeiroCarac);
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// Imprima o resultado das operações soma, divisão e subtração entre os seguintes números "1,87 e 9,12"
+
+using System;
+
+namespace Exercicio3
+{
+    class Ex3
+    {
+        static void Main(string[] args)
+        {
+            double n1 = 1.87, n2 = 9.12;
+
+            double soma = n1 + n2;
+            double sub = n1 - n2;
+            double div = n1 / n2;
+
+            Console.WriteLine("Soma entre " + n1 + " e " + n2 + " eh " + soma);
+            Console.WriteLine("Subtracao entre " + n1 + " e " + n2 + " eh " + sub);
+            Console.WriteLine("Divisao entre " + n1 + " e " + n2 + " eh " + div);
+        }
+    }
+}

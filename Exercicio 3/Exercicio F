@@ -1,0 +1,23 @@
+//Compare as palavras "texto" e "TEXTO" para ver se elas são iguais, de uma forma que o resultado seja verdadeiro. Dica: ignore o case sensitive
+
+using System;
+
+namespace Exercicio6
+{
+    class Ex6
+    {
+        static void Main(string[] args)
+        {
+            string str1 = "texto";
+            string str2 = "TEXTO";
+
+            string str1Maiuscula = str1.ToUpper();
+            string str2Maiuscula = str2.ToUpper();
+
+            if (String.Compare(str1Maiuscula, str2Maiuscula) == 0)
+            {
+                Console.WriteLine("As strings comparadas sao iguais");
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+//Junte as palavras "programinha" e "maneiro" de forma que o resultado seja "programinha maneiro" e imprima o resultado na tela.
+
+using System;
+
+namespace Exercicio1
+{
+    class Ex1
+    {
+        static void Main(string[] args)
+        {
+            string str1 = "programinha";
+            string str2 = "maneiro";
+
+            Console.WriteLine("A juncao da string " + str1 + " com a string " + str2 + " eh " + str1 + str2);
+        }
+    }
+}

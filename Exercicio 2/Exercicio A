@@ -1,0 +1,18 @@
+//Obtenha o resto da divisão entre os números "1 e 1" e imprima na tela
+
+using System;
+
+namespace Exercicio1
+{
+    class Ex1
+    {
+        static void Main(string[] args)
+        {
+            float n1 = 1, n2 = 1;
+
+            float resto = n1 % n2;
+
+            Console.WriteLine("O resto da divisao entre " + n1 + " e " + n2 + " eh " + resto);
+        }
+    }
+}

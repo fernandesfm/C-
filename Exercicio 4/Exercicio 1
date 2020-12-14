@@ -1,0 +1,35 @@
+//Todos os enunciados das ações estão comentados no código
+
+using System;
+
+namespace Exercicio1
+{
+    class Ex1
+    {
+        static void Main(string[] args)
+        {
+            //Pegue a hora atual do sistema, armazene numa variável e imprima na tela em qualquer formato
+            DateTime HojeSemHoras = DateTime.Today;
+            Console.WriteLine(HojeSemHoras);
+
+            //Pegue a hora atual do sistema, armazene numa variável e imprima na tela no formato de dd/mm/aaaa
+            DateTime HojeComHoras = DateTime.Now;
+            Console.WriteLine(HojeComHoras);
+
+            //Pegue a hora atual do sistema, armazene numa variável, adicione um dia e imprima na tela em qualquer formato
+            DateTime Hoje = DateTime.Now;
+            DateTime MaisUmDia = Hoje.AddDays(1);
+            Console.WriteLine(MaisUmDia);
+
+            //Pegue a hora atual do sistema, armazene numa variável, subtraia 4 horas e imprima na tela em qualquer formato
+            DateTime Menos4Horas = Hoje.AddHours(-4);
+            Console.WriteLine(Menos4Horas);
+
+            //Dado o seguinte texto "20201021T172410" converta em uma variável do tipo DateTime e imprima na tela.
+            string str = "20201021T172410";
+            var DataFormatada = str.Insert(4, "/").Insert(7, "/").Replace("T", " ").Insert(13, ":").Insert(16, ":");
+            var DataConvertida = DateTime.Parse(DataFormatada);
+            Console.WriteLine(DataConvertida);
+        }
+    }
+}

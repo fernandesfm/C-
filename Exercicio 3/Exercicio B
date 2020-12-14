@@ -1,0 +1,17 @@
+//Dada a palavra "PROGRAMÃO" (em maiúsculo), imprima na tela com todas a letras minúsculas.
+
+using System;
+
+namespace Exercicio2
+{
+    class Ex2
+    {
+        static void Main(string[] args)
+        {
+            string str1 = "PROGRAMÃO";
+            string lowercase = str1.ToLower();
+
+            Console.WriteLine("A palavra " + str1 + " convertida para minusculo eh: " + lowercase);
+        }
+    }
+}
